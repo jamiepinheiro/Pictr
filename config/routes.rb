@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '' => 'pics#index'
+
   get '/pics' => 'pics#index'
   get 'pics/:id' => 'pics#show', as: :pic
 
