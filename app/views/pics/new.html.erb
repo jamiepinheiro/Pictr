@@ -1,0 +1,15 @@
+<a href="/pics"> <h1>Go Back</h1> <a/>
+
+<h1>Pic#new</h1>
+
+<div class="create">
+	<div class="container">
+
+			<%= form_for(@pic) do |f| %>  
+				<%= f.text_field :title, :placeholder => "title" %><br>
+				<%= f.text_field :image, :placeholder => "image"%><br>
+				<%= f.submit "Add", :class => "button" %>
+			<% end %>
+	
+	</div>
+</div>
