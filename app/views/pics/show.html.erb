@@ -1,8 +1,5 @@
-<a href="/pics"> <h1>Go Back</h1> <a/>
+<a href="/pics"> <Button id="backbutton">Go Back</Button> <a/>
 
-<h1>Pics#show</h1>
-<div class="image">
-	<p class="title"> <%= @pic.title %> </p>
-	<img src= <%= @pic.image %> />
-</div>
+	<p class="title"> <strong><%= @pic.title %></strong> </p>
+	<img id="imageshow" src= <%= @pic.image %> />
 

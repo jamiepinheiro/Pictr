@@ -1,135 +1,89 @@
 html, a, h1 {
   margin: 0;
-  background-color: #bbbbbb;
+  background-color: #99CCFF;
 }
 
 .title {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 30px;
-	margin: 0px;
+text-align: center;
+	font-family: "Ariel", Helvetica, sans-serif;
+	font-size: 80px;
+	margin: 10px;
 }
 
 .image {
-	border-radius: 30px;
-	text-align:center;
-	background-color: grey;
-	width: 300px;
-	margin: 20px;
-	padding: 20px;
-	float: left;
-	display: inline-block;
+  filter: blur(30px);
+	width: 10vw;
+  height: 9vw;
+  float: left;
+  transition: opacity 0.5s;
 }
 
-img {
-	border-radius: 30px;
-	width: 200px;
-	height: 200px;
+.image:hover{
+  opacity: 0.5;
 }
 
-body {
-  background-color: #eee;
-  font-family: 'Roboto', sans-serif;
+#grid {
+  margin-left: 25vw;
+  width: 50vw;
+  height: 2000px;
+  background-color: cornflowerblue;
 }
 
-.header {
-  background-color: #f2580b;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
-  height: 80px; 
-  text-align: center;
-}
-
-.header img {
-  margin: 15px 0 0;
-  width: 60px;
-}
-
-.header h1 {
-  text-indent: -9999px;
-}
-
-.container {
-  width: 480px;
-  margin: 0 auto;
-}
-
-.messages, .create {
-  margin: 40px 0;
-}
-
-.messages a,
-.create .actions input {
-  background-color: #f2580b;
-  border: none;
+button {
+  background-color: #00FF66;
+  border: 5px #006666 solid;
   color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
-  padding: 12px 24px;
+  font-size: 30px;
   transition: background-color 0.5s;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.message {
-  background-color: #fff;
-  font-weight: 300;
-  padding: 16px;
-  margin-bottom: 10px;
-}
-
-p.time {
-  color: #0084d7;
-  font-size: 12px;
-  margin-top: 12px;
-}
-
-.button {
-  background-color: #1133cc;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
-  padding: 12px 24px;
-  transition: background-color 0.5s;
-  margin-bottom: 20px;
 }
 
 button:hover {
-  background-color: #c24609;
+  background-color: #009966;
+}
+
+#addpicbutton{
+  width: 12vw;
+  height: 3vw;
+  margin-left: 44vw;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#backbutton{
+  width: 8vw;
+  height: 2vw;
+  margin: 6px;
+}
+
+#addbutton{
+  margin-top: 10px;
+  margin-left: 44vw;
+  margin_top: 20px;
+  width: 12vw;
+  height: 3vw;
+  background-color: #00FF66;
+  border: 5px #006666 solid;
+  color: #fff;
+  font-size: 30px;
   transition: background-color 0.5s;
 }
 
-form label {  display: block;
-  width: 100px;
+#addbutton:hover {
+  background-color: #009966;
 }
 
-form textarea {
-  border: 1px solid transparent;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  margin: 20px 0 10px;
-  min-height: 100px;
-  padding: 16px;
-  transition: border 0.5s;
-  width: calc(100% - 32px);
+.formfield{
+  text-align: center;
+  font-size: 30px;
+  width: 33vw;
+  height: 2vw;
+  margin-left: 33vw;
+  margin-top: 10px;
 }
 
-form textarea:focus {
-  border: 1px solid #0084d7;
-  box-shadow: 0;
-  outline: 0;
-  transition: border 0.5s;
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .messages, .create {
-      padding: 0 20px;
-    }
+#imageshow{
+  width: 60vw;
+  padding: 30px;
+  background-color: cornflowerblue;
+  margin-left: 20vw;
 }

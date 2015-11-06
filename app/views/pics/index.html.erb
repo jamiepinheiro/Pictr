@@ -1,14 +1,11 @@
-<a href="/new"> <h1>Add a Pic</p> <a/>
-
-<h1>Pics#index</h1>
+<a href="/new"> <Button id="addpicbutton">Add a Pic</Button> <a/>
+<div id="grid">
 <% @pics.each do |pic| %>
 	
-	<div class="image">
-		<p class="title"> <%= pic.title %> </p>
-		<img src= <%= pic.image %> />
-		<p class="title"> <%= link_to "MORE", pic_path(pic.id) %> </p>
-	</div>
-	
+		<%= link_to pic_path(pic.id) do%>
+			<img class="image" src= <%= pic.image %>
+		<% end %>
 <% end %>
 
+</div>
 

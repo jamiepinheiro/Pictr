@@ -1,14 +1,13 @@
-<a href="/pics"> <h1>Go Back</h1> <a/>
+<a href="/pics"> <Button id="backbutton">Go Back</Button> <a/>
 
-<h1>Pic#new</h1>
 
 <div class="create">
 	<div class="container">
 
 			<%= form_for(@pic) do |f| %>  
-				<%= f.text_field :title, :placeholder => "title" %><br>
-				<%= f.text_field :image, :placeholder => "image"%><br>
-				<%= f.submit "Add", :class => "button" %>
+				<%= f.text_field :title, :placeholder => "title", :class => "formfield"%><br>
+				<%= f.text_field :image, :placeholder => "image link", :class => "formfield"%><br>
+				<%= f.submit "Add", :id => "addbutton" %>
 			<% end %>
 	
 	</div>
