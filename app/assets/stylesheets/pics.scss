@@ -11,6 +11,7 @@ text-align: center;
 }
 
 .image {
+  position: relative; 
   filter: blur(30px);
 	width: 10vw;
   height: 9vw;
@@ -20,6 +21,11 @@ text-align: center;
 
 .image:hover{
   opacity: 0.5;
+}
+
+.imagetitle{
+  position: absolute;
+  text-align: center;
 }
 
 #grid {
@@ -33,7 +39,7 @@ button {
   background-color: #00FF66;
   border: 5px #006666 solid;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   transition: background-color 0.5s;
 }
 
@@ -50,9 +56,10 @@ button:hover {
 }
 
 #backbutton{
-  width: 8vw;
-  height: 2vw;
+  width: 11vw;
+  height: 3vw;
   margin: 6px;
+  font-size: 15px;
 }
 
 #addbutton{
@@ -64,7 +71,7 @@ button:hover {
   background-color: #00FF66;
   border: 5px #006666 solid;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   transition: background-color 0.5s;
 }
 
@@ -74,7 +81,7 @@ button:hover {
 
 .formfield{
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   width: 33vw;
   height: 2vw;
   margin-left: 33vw;
@@ -86,4 +93,9 @@ button:hover {
   padding: 30px;
   background-color: cornflowerblue;
   margin-left: 20vw;
+}
+
+.container{
+  padding: 30px;
+  background-color: cornflowerblue;
 }
