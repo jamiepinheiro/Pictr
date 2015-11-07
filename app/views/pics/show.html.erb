@@ -4,3 +4,10 @@
 <p class="title"> <strong><%= @pic.title %></strong> </p>
 <img id="imageshow" src= <%= @pic.image %> />
 
+<% @comments.each do |comment| %>
+		<div class="commentcontainer">
+			<h2 class="comment"> <%= comment.message %> </h2>
+		</div>
+<% end %>
+
+<%= render "comments/form" %>

@@ -1,0 +1,4 @@
+<%= form_for([@pic, @comment]) do |f| %>
+	<%= f.text_field :message, :placeholder => "message", :class => "formfield"%>
+	<%= f.submit "Comment", :id => "addbutton" %>
+<% end %>

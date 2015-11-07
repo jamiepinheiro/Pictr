@@ -1,3 +1,3 @@
 class Pic < ActiveRecord::Base
-	has_many :comment
+	has_many :comments
 end

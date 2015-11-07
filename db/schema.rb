@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(version: 20151105003411) do
 
   create_table "comments", force: :cascade do |t|
+    t.integer  "pic_id"
+    t.string   "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
