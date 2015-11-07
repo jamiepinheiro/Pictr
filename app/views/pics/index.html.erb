@@ -2,8 +2,10 @@
 
 <div id="grid">
 	<% @pics.each do |pic| %>
-			<%= link_to pic_path(pic.id) do%>
-				<img class="image" src= <%= pic.image %> />
+			<% if File.extname(pic.image) != ".gifv" %>
+				<%= link_to pic_path(pic.id) do%>
+					<img class="image" src= <%= pic.image %> />
+				<% end %>
 			<% end %>
 	<% end %>
 </div>
