@@ -1,6 +1,6 @@
 <a href="/pics"> <Button id="backbutton">Go Back</Button> <a/>
-<a href="/pics"> <Button id="deletebutton">Delete</Button> <a/>
+<%= button_to "Delete", pic_path(@pic), :method => "delete", :id => "deletebutton"%>
 
-	<p class="title"> <strong><%= @pic.title %></strong> </p>
-	<img id="imageshow" src= <%= @pic.image %> />
+<p class="title"> <strong><%= @pic.title %></strong> </p>
+<img id="imageshow" src= <%= @pic.image %> />
 

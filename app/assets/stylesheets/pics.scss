@@ -17,6 +17,7 @@ html, a, h1 {
 }
 
 .image {
+  background-color: white;
   position: relative;
   width: 10vw;
   height: 10vw;
@@ -71,6 +72,9 @@ button:hover {
 }
 
 #deletebutton{
+  border: 5px #006666 solid;
+  color: #fff;
+  transition: background-color 0.5s;
   background-color: #EE2211;
   width: 10vw;
   height: 3vw;
@@ -119,4 +123,12 @@ button:hover {
 .container{
   padding: 1vw;
   background-color: cornflowerblue;
+}
+
+.button_to {
+  display: inline;
+}
+
+.button_to div {
+  display: inline;
 }

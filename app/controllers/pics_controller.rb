@@ -9,6 +9,12 @@ class PicsController < ApplicationController
   def new
     @pic = Pic.new
   end
+
+  def destroy
+    @pic = Pic.find(params[:id])
+    @pic.destroy
+    redirect_to '/pics'
+  end
   
   def create
     @pic = Pic.new(pic_params)
