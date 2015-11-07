@@ -4,18 +4,22 @@ html, a, h1 {
 }
 
 .title {
-text-align: center;
+  text-align: center;
 	font-family: "Ariel", Helvetica, sans-serif;
-	font-size: 80px;
-	margin: 10px;
+	font-size: 3.1vw;
+	margin: 1vw;
+}
+
+.box{
+  width: 10vw;
+  height: 10vw;
+  float: left;
 }
 
 .image {
-  position: relative; 
-  filter: blur(30px);
-	width: 10vw;
-  height: 9vw;
-  float: left;
+  position: relative;
+  width: 10vw;
+  height: 10vw;
   transition: opacity 0.5s;
 }
 
@@ -23,9 +27,11 @@ text-align: center;
   opacity: 0.5;
 }
 
-.imagetitle{
+.imagetext{
+  margin-left: 20px;
+  font-family: "Ariel", Helvetica, sans-serif;
+  font-size: 2.1vw;
   position: absolute;
-  text-align: center;
 }
 
 #grid {
@@ -39,7 +45,7 @@ button {
   background-color: #00FF66;
   border: 5px #006666 solid;
   color: #fff;
-  font-size: 20px;
+  font-size: 1vw;
   transition: background-color 0.5s;
 }
 
@@ -51,27 +57,39 @@ button:hover {
   width: 12vw;
   height: 3vw;
   margin-left: 44vw;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
 }
 
 #backbutton{
   width: 10vw;
   height: 3vw;
-  margin: 6px;
-  font-size: 20px;
+  margin: 1vw;
+  font-size: 1.5vw;
+}
+
+#deletebutton{
+  background-color: #EE2211;
+  width: 10vw;
+  height: 3vw;
+  float: right;
+  font-size: 1.5vw;
+  margin: 1vw;
+}
+
+#deletebutton:hover {
+  background-color: #441100;
 }
 
 #addbutton{
-  margin-top: 10px;
   margin-left: 44vw;
-  margin_top: 20px;
+  margin-top: 1vh;
   width: 12vw;
   height: 3vw;
   background-color: #00FF66;
-  border: 5px #006666 solid;
+  border: .25vw #006666 solid;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5vw;
   transition: background-color 0.5s;
 }
 
@@ -81,21 +99,22 @@ button:hover {
 
 .formfield{
   text-align: center;
-  font-size: 20px;
+  font-size: 1.5vw;
   width: 33vw;
-  height: 2vw;
+  height: 1.5vw;
   margin-left: 33vw;
-  margin-top: 10px;
+  margin-top: 1vh;
 }
 
 #imageshow{
-  width: 60vw;
-  padding: 30px;
+  width: 33vw;
+  padding: 1vw;
+  padding-left: 33vw;
+  padding-right: 33vw;
   background-color: cornflowerblue;
-  margin-left: 20vw;
 }
 
 .container{
-  padding: 30px;
+  padding: 1vw;
   background-color: cornflowerblue;
 }
